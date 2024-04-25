@@ -4,10 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anatomy of a Fall</title>
+    <!--Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!--Pathway Gothic One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pathway+Gothic+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.css">
+    <!--Bootstrap 5.3-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <h1>Hello, World</h1>
-    
+    <nav class="navbar fixed-top">
+        <ul class="navbar__ul">
+            <li><a href="#cast">Cast</a></li>
+            <li><a href="#trailer">Trailer</a></li>
+            <li><a href="#moreinfo">More info</a></li>
+        </ul>
+    </nav>
+    <section class="first-fold">
+        <img class="first-fold__bg" src="./src/images/image-2.jpg" alt="">
+        <div class="first-fold__text">
+            <img src="./src/images/cannes.png" alt="">
+            <span class="director">
+                <p>Justine Triet's</p>
+            </span>
+            <span class="film-name">
+                <h1>Anatomy<br>of<br> a <br>Fall</h1>
+            </span>            
+        </div>        
+    </section>
+    <section id="cast" class="scnd-fold">
+        <ul class="scnd-fold__ul">
+            <li>
+                <h2>Sandra Hüller</h2>
+            </li>
+            <li>
+                <h2>Swann Arlaud</h2>
+            </li>
+            <li>
+                <h2>Milo Machado Graner</h2>
+            </li>
+            <li>
+                <h2>Samuel Theis</h2>
+            </li>
+        </ul>
+        <div class="scnd-fold__text">
+            <h3 class="scnd-fold__text__heading">“...a masterful exercise in seeming like one thing while being another...”</h3>
+            <p class="scnd-fold__text__source">iNews.co</p>
+        </div>
+    </section>
+    <section id="trailer" class="third-fold">
+        <h4 class="third-fold__heading">Watch now the official trailer:</h4>
+        <div class="third-fold__trailer">
+            <iframe class="third-fold__trailer__video" width="560" height="315" src="https://www.youtube.com/embed/FUXawkH-ONM?si=vKnEKgMpnfCd1R0v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- <section class="fourth-fold">
+        <div class="fourth-fold__tabs">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#resume" data-bs-toggle="resume" data-bs-target="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#awards" data-bs-toggle="awards" data-bs-target="#awards">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Images</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Where to watch</a>
+                </li>
+            </ul>
+        </div>
+        <div class="fourth-fold__content">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-resume" role="tabpanel" aria-labelledby="pills-resume-tab" tabindex="0">
+                    <h5>DID SHE DO IT?</h5>
+                    <p></p>
+                </div>
+                <div class="tab-pane fade" id="pills-awards" role="tabpanel" aria-labelledby="pills-awards-tab" tabindex="0">
+                    <h6>Cannes Film Festival</h6>
+                    <p>Palm d’Or - 2023</p>
+                </div>
+                <div class="tab-pane fade" id="pills-images" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="pills-wtw" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+            </div>
+            
+        </div>
+    </section> -->
+    <section id="moreinfo">
+        <div class="fourth-fold container">
+            <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Resume</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Awards</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Images</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Where to watch</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <div class="first-tab">
+                        <h5>DID SHE DO IT?</h5>
+                        <p>A woman is suspected of her husband’s murder, and their blind son faces a moral dilemma as the sole witness.</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <div class="scnd-tab">
+                        <span>
+                            <h6>Cannes Film Festival</h6>
+                            <p>Palm d’Or - 2023</p>
+                        </span>
+                        <span>
+                            <h6>Oscar</h6>
+                            <p>Best Original Screenplay -2024</p>
+                        </span>
+                        <span>
+                            <h6>Critics Choics Awards</h6>
+                            <p>Best Foreign Language Film -2024</p>
+                        </span>
+                        <span>
+                            <h6>Golden Globes</h6>
+                            <p>Best Screenplay - 2024</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col">
+                                <img class="tab-img" src="/src/images/image-1.jpg" alt="">
+                            </div>
+                            <div class="col">
+                                <img class="tab-img" src="/src/images/image-2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img class="tab-img" src="/src/images/image-3.jpg" alt="">
+                            </div>
+                            <div class="col">
+                                <img class="tab-img" src="/src/images/image-4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img class="tab-img" src="/src/images/image-5.jpg" alt="">
+                            </div>
+                            <div class="col">
+                                <img class="tab-img" src="/src/images/image-6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img class="tab-img" src="/src/images/image-7.jpg" alt="">
+                            </div>
+                            <div class="col">
+                                <img class="tab-img" src="/src/images/image-8.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                    <div class="where-to">
+                        <span>
+                            <div class="logo"><img src="src/images/2560px-Amazon_Prime_Logo_1.png" alt=""></div>
+                            Amazon Prime
+                        </span>
+                        <span>
+                            <div class="logo"><img src="src/images/Apple-TV-Logo_1.png" alt=""></div>
+                            Apple TV
+                        </span>
+                        <span>
+                            <div class="logo"><img src="src/images/Google-Play-Logo_1.png" alt=""></div>
+                            Google Play
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <h6>Created by Lais Borges</h6>
+            <a href="https://github.com/borgeslais" target="_blank"><img src="./src/images/github.svg" alt="Github"></a>
+        </div>
+    </footer>
 </body>
 </html>
